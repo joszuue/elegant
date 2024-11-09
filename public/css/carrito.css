@@ -1,0 +1,41 @@
+.toggle-checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+.toggle-label {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 55px;
+}
+
+.slide-panel {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Panel oculto fuera de la vista */
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+}
+
+.slide-panel .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+}
+
+.panel-content {
+    padding: 20px;
+}
+
+.toggle-checkbox:checked ~ .slide-panel {
+    right: 0; /* Despliega el panel */
+}

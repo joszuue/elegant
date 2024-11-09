@@ -1,0 +1,42 @@
+
+.center-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-left: 50px;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.display-4 {
+    color: white;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    max-height: 250px; /* Ajusta la altura según sea necesario */
+    overflow-y: auto;
+    position: relative;
+    color: white;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: black;
+    z-index: 0;
+}
+tbody td {
+    color: white;
+}
